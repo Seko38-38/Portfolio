@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serkan Cetinkaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+<body>
+    <div class="parallax"></div>
+    <div class="main" id="home">
+        <nav>
+            <h2 class="logo">Mein<br><span>Portfolio</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Über</a></li>
+                <li><a href="#second">Abschlüsse</a></li>
+                <li><a href="#skills">Fähigkeiten</a></li>
+            </ul>
+            <a href="#" class="btn" data-modal-target="#modal">Kontakt</a>
+        </nav>
+
+        <div class="content" id="maiin">
+            <h4>Hallo, Ich bin</h4>
+            <h1>Serkan <span>Cetinkaya</span></h1>
+            <h3>Webdeveloper und Grafik Designer.</h3>
+        </div>
+    </div>
+    <section class="about" id="about">
+        <div class="haupt">
+            <img src="/img/SerkanCetinkaya.png" class="imgseko" id="seko" alt="SerkanCetinkaya">
+            <div class="about-text">
+                <h2>Über Mich</h2>
+                <h5>Webdevelopement & <span>Grafikdesign</span></h5>
+                <p> Vor 8 Monaten habe ich meinen ersten Schritt in HTML & CSS gemacht. <br>Spielserver für Videospiele
+                    waren auf der Suche
+                    nach Scriptoverlays, welche mit HTML und CSS designed wurden, ich entwickelte ein Interesse für das
+                    Designen und erstellte Overlays.
+                    <br><br>
+                    Als ich auf dem Level war, unkompliziert Overlays zuerarbeiten, kam der Zeitpunkt für mich, mein
+                    Können weiterzuentwickeln. <br>
+                    Ich erstellte am Anfang noch recht üppige Homepages, meistens Seiten welche <br> an Youtube im Jahre
+                    2008 erinnerten, jedoch lernte ich immer dazu und konnte Inhalte immer besser
+                    miteinander Verknüpfen sowie Zusammenhänge besser verstehen. <br> Nach 2 Monaten, fiel mir auf, dass
+                    meinen Homepages Leben fehlte.<br> Standart Boxen ohne Umrandungen,
+                    die Ecken waren nicht abgerundet und keine einzigen Effekte.<br>
+                    Es kam also der Zeitpunkt für mich, CSS zu lernen und mich darin zu verbessern.<br> Es fing mit
+                    kleinen Farbverläufen an, ging irgendwann zu komplexeren Konstrukten über in denen
+                    verschiedene Elemente aufeinander basierten<br> und um dem ganzen noch die Kirsche auf die Sahne zu
+                    setzen, absolvierte ich einen Kurs in responsive Webdesign und widmete mich diesem für 300 Stunden
+                    zu.<br><br>
+                    Nach dem Kurs hieß es dann für mich, mein gelerntes stätig umzusetzen und nach etlichen Übungen bin
+                    ich nun in der Lage, Websiten wie diese, auf der du dich gerade befindest, zu erstellen und zu
+                    gestalten.<br>
+                    Der nächste Meilenstein für mich ist nun JavaScript, ich habe bereits einiges gelernt und verstehe die
+                    Grundkenntnisse, möchte aber mein Wissen in diesem bereich noch um einiges erweitern!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title"><h1>Kontakt</h1></div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <h2>Ich bin wie folgt erreichbar:</h2><br><br>
+          <h3>Tel.: 017664973716</h3><br>
+          Täglich von 12:00 Uhr bis 18:00 Uhr<br><br>
+
+          <h3>Email: serkanc38@icloud.com</h3><br>
+          Ich antworte immer schnellstmöglich!
+
+        </div>
+      </div>
+      <div id="overlay"></div>
+
+    <section class="timeline" id="second">
+        <img src="/img/Timeline.png" alt="Timeline" id="seko2">
+    </section>
+
+
+    <div class="portfolio" id="skills">
+        <h1>Meine Fähigkeiten</h1>
+        <div class="services__wrapper">
+            <div class="services__card">
+                <i class="fa-solid fa-trophy"></i>
+                <h2>HTML & CSS</h2>
+                <p>Sehr gute Kenntnisse</p>
+            </div>
+            <div class="services__card">
+                <i class="fa-solid fa-trophy"></i>
+                <h2> Grafik Designs</h2>
+                <p>Photoshop & After Effects</p>
+            </div>
+            <div class="services__card">
+                <i class="fa-solid fa-flag-checkered"></i>
+                <h2>JavaScript</h2>
+                <p>Grundkenntnisse</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script>
+        VanillaTilt.init(document.querySelector("#seko"), {
+            max: 5,
+            speed: 200
+        });
+
+        VanillaTilt.init(document.querySelector("#seko2"), {
+            max: 5,
+            speed: 200
+        });
+    </script>
+</body>
+
+</html>
